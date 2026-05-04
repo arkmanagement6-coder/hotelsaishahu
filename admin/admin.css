@@ -1,0 +1,228 @@
+/* Hotel Sai Shahu - Admin Styles */
+
+:root {
+    --sidebar-bg: #002366;
+    --main-bg: #F4F7FE;
+    --white: #FFFFFF;
+    --gold: #D4AF37;
+    --text-dark: #2B3674;
+    --text-light: #A3AED0;
+    --primary-blue: #4318FF;
+    --success: #05CD99;
+    --warning: #FFCE20;
+    --shadow: 0px 20px 50px rgba(0, 0, 0, 0.05);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Montserrat', sans-serif;
+    background-color: var(--main-bg);
+    color: var(--text-dark);
+}
+
+.admin-container {
+    display: flex;
+    min-height: 100vh;
+}
+
+/* Sidebar */
+.sidebar {
+    width: 280px;
+    background: var(--sidebar-bg);
+    color: var(--white);
+    padding: 40px 0;
+    flex-shrink: 0;
+}
+
+.sidebar-header {
+    padding: 0 40px 40px;
+    border-bottom: 1px solid rgba(255,255,255,0.1);
+}
+
+.sidebar-header h2 {
+    color: var(--gold);
+    font-size: 1.5rem;
+    margin-bottom: 5px;
+}
+
+.sidebar-header span {
+    font-size: 0.8rem;
+    opacity: 0.7;
+}
+
+.sidebar-nav {
+    margin-top: 40px;
+}
+
+.sidebar-nav ul li {
+    list-style: none;
+}
+
+.sidebar-nav ul li a {
+    display: flex;
+    align-items: center;
+    padding: 15px 40px;
+    color: rgba(255,255,255,0.7);
+    text-decoration: none;
+    transition: all 0.3s ease;
+    border-right: 4px solid transparent;
+}
+
+.sidebar-nav ul li a i {
+    margin-right: 15px;
+    width: 20px;
+}
+
+.sidebar-nav ul li.active a, .sidebar-nav ul li a:hover {
+    color: var(--white);
+    background: rgba(255,255,255,0.05);
+    border-right-color: var(--gold);
+}
+
+/* Main Content */
+.main-content {
+    flex-grow: 1;
+    padding: 40px;
+}
+
+.top-bar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 40px;
+}
+
+.search-box {
+    background: var(--white);
+    padding: 12px 20px;
+    border-radius: 30px;
+    display: flex;
+    align-items: center;
+    width: 400px;
+    box-shadow: var(--shadow);
+}
+
+.search-box i {
+    color: var(--text-light);
+    margin-right: 15px;
+}
+
+.search-box input {
+    border: none;
+    outline: none;
+    width: 100%;
+    font-family: inherit;
+}
+
+.user-profile {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.user-profile img {
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+}
+
+/* Dashboard Content */
+.stats-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+    gap: 30px;
+    margin-bottom: 40px;
+}
+
+.stat-card {
+    background: var(--white);
+    padding: 30px;
+    border-radius: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: var(--shadow);
+}
+
+.stat-info h3 {
+    font-size: 0.9rem;
+    color: var(--text-light);
+    margin-bottom: 10px;
+}
+
+.stat-value {
+    font-size: 1.8rem;
+    font-weight: 700;
+}
+
+.stat-card i {
+    font-size: 2.5rem;
+    color: var(--gold);
+    opacity: 0.2;
+}
+
+/* Table */
+.table-container {
+    background: var(--white);
+    padding: 30px;
+    border-radius: 20px;
+    box-shadow: var(--shadow);
+}
+
+.table-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 30px;
+}
+
+.admin-table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.admin-table th {
+    text-align: left;
+    padding: 15px;
+    color: var(--text-light);
+    font-weight: 600;
+    font-size: 0.85rem;
+    border-bottom: 1px solid var(--main-bg);
+}
+
+.admin-table td {
+    padding: 20px 15px;
+    border-bottom: 1px solid var(--main-bg);
+}
+
+.status {
+    padding: 5px 15px;
+    border-radius: 20px;
+    font-size: 0.8rem;
+    font-weight: 600;
+}
+
+.status.confirmed { background: rgba(5, 205, 153, 0.1); color: var(--success); }
+.status.pending { background: rgba(FFCE20, 0.1); color: var(--warning); }
+
+.action-btn {
+    background: none;
+    border: none;
+    color: var(--text-light);
+    cursor: pointer;
+}
+
+.btn-gold {
+    background: var(--gold);
+    color: var(--white);
+    padding: 10px 25px;
+    border-radius: 10px;
+    border: none;
+    cursor: pointer;
+    font-weight: 600;
+}

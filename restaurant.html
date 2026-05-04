@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Restaurant - Hotel Sai Shahu</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Montserrat:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+    <!-- Header -->
+    <header id="main-header" class="inner-header">
+        <div class="container">
+            <nav>
+                <a href="index.html" class="logo">Sai Shahu</a>
+                <ul class="nav-links">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="rooms.html">Rooms</a></li>
+                    <li><a href="restaurant.html">Restaurant</a></li>
+                    <li><a href="banquet.html">Banquet</a></li>
+                    <li><a href="bar.html">Bar</a></li>
+                    <li><a href="gallery.html">Gallery</a></li>
+                    <li><a href="about.html">About Us</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+                <div class="mobile-toggle">
+                    <i class="fas fa-bars"></i>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Page Header -->
+    <section class="page-title-area" style="background-image: url('assets/restaurant.png');">
+        <div class="container">
+            <div class="page-title-content text-center">
+                <h2>Our Restaurant</h2>
+                <p>Enjoy Delicious Food in a Premium Dining Experience</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Restaurant Section -->
+    <section class="restaurant-section section-padding">
+        <div class="container">
+            <div class="about-grid">
+                <div class="about-image">
+                    <img src="assets/restaurant.png" alt="Dining Area">
+                </div>
+                <div class="about-text">
+                    <span class="sub-title">Fine Dining</span>
+                    <h2>A Culinary Journey</h2>
+                    <p>Our restaurant offers fresh, tasty, and hygienic food with a comfortable dining atmosphere for family, friends, and business meetings.</p>
+                    <p>From traditional local flavors to international cuisines, our expert chefs prepare every dish with passion and precision.</p>
+                    <a href="#reservation" class="btn btn-gold">Reserve Your Table</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Menu Section -->
+    <section class="menu-section section-padding gray-bg">
+        <div class="container">
+            <div class="section-header text-center">
+                <span class="sub-title">Our Menu</span>
+                <h2>Chef's Special Selection</h2>
+            </div>
+            <div class="menu-grid">
+                <div class="menu-item">
+                    <div class="menu-info">
+                        <h4>Special Thali</h4>
+                        <p>A complete meal with variety of dishes.</p>
+                    </div>
+                    <div class="menu-price">₹350</div>
+                </div>
+                <div class="menu-item">
+                    <div class="menu-info">
+                        <h4>Paneer Tikka</h4>
+                        <p>Marinated paneer cubes grilled to perfection.</p>
+                    </div>
+                    <div class="menu-price">₹280</div>
+                </div>
+                <div class="menu-item">
+                    <div class="menu-info">
+                        <h4>Chicken Biryani</h4>
+                        <p>Aromatic rice with tender chicken pieces.</p>
+                    </div>
+                    <div class="menu-price">₹320</div>
+                </div>
+                <div class="menu-item">
+                    <div class="menu-info">
+                        <h4>Dal Tadka</h4>
+                        <p>Yellow lentils tempered with aromatic spices.</p>
+                    </div>
+                    <div class="menu-price">₹180</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Reservation Form -->
+    <section id="reservation" class="reservation-section section-padding">
+        <div class="container">
+            <div class="reservation-box">
+                <div class="section-header text-center">
+                    <span class="sub-title">Book A Table</span>
+                    <h2>Table Reservation</h2>
+                </div>
+                <form class="reservation-form">
+                    <div class="form-grid">
+                        <div class="form-group">
+                            <label>Name</label>
+                            <input type="text" placeholder="Your Name">
+                        </div>
+                        <div class="form-group">
+                            <label>Phone</label>
+                            <input type="text" placeholder="Your Phone">
+                        </div>
+                        <div class="form-group">
+                            <label>Date</label>
+                            <input type="date">
+                        </div>
+                        <div class="form-group">
+                            <label>Time Slot</label>
+                            <select>
+                                <option>Lunch (12:00 PM - 3:00 PM)</option>
+                                <option>Dinner (7:00 PM - 11:00 PM)</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label>Guests</label>
+                            <input type="number" value="2">
+                        </div>
+                        <div class="form-group">
+                            <label>&nbsp;</label>
+                            <button type="submit" class="btn btn-gold btn-full">Book Table</button>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-col">
+                    <h3>Sai Shahu</h3>
+                    <p>Luxury rooms, restaurant, banquet, and bar services under one roof.</p>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-facebook"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-whatsapp"></i></a>
+                    </div>
+                </div>
+                <div class="footer-col">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="rooms.html">Rooms</a></li>
+                        <li><a href="restaurant.html">Restaurant</a></li>
+                        <li><a href="banquet.html">Banquet</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Contact Us</h4>
+                    <p><i class="fas fa-map-marker-alt"></i> Nashik, Maharashtra</p>
+                    <p><i class="fas fa-phone"></i> +91 8433206010</p>
+                    <p><i class="fas fa-envelope"></i> info@hotelsaishahu.com</p>
+                </div>
+            </div>
+            <div class="footer-bottom text-center">
+                <p>&copy; 2026 Hotel Sai Shahu. All Rights Reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/booking.js"></script>
+    <script src="js/main.js"></script>
+</body>
+</html>

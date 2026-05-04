@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin Dashboard - Hotel Sai Shahu</title>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="stylesheet" href="admin.css">
+</head>
+<body>
+
+    <div class="admin-container">
+        <!-- Sidebar -->
+        <aside class="sidebar">
+            <div class="sidebar-header">
+                <h2>Sai Shahu</h2>
+                <span>Admin Panel</span>
+            </div>
+            <nav class="sidebar-nav">
+                <ul>
+                    <li class="active"><a href="#"><i class="fas fa-th-large"></i> Dashboard</a></li>
+                    <li><a href="#"><i class="fas fa-bed"></i> Rooms</a></li>
+                    <li><a href="#"><i class="fas fa-calendar-check"></i> Bookings</a></li>
+                    <li><a href="#"><i class="fas fa-utensils"></i> Restaurant</a></li>
+                    <li><a href="#"><i class="fas fa-glass-martini-alt"></i> Bar</a></li>
+                    <li><a href="#"><i class="fas fa-users"></i> Users</a></li>
+                    <li><a href="../index.html"><i class="fas fa-external-link-alt"></i> View Website</a></li>
+                </ul>
+            </nav>
+        </aside>
+
+        <!-- Main Content -->
+        <main class="main-content">
+            <header class="top-bar">
+                <div class="search-box">
+                    <i class="fas fa-search"></i>
+                    <input type="text" placeholder="Search bookings...">
+                </div>
+                <div class="user-profile">
+                    <span>Admin User</span>
+                    <img src="https://ui-avatars.com/api/?name=Admin+User&background=D4AF37&color=fff" alt="Profile">
+                </div>
+            </header>
+
+            <div class="dashboard-content">
+                <div class="stats-grid">
+                    <div class="stat-card">
+                        <div class="stat-info">
+                            <h3>Total Bookings</h3>
+                            <p class="stat-value" id="total-bookings">124</p>
+                        </div>
+                        <i class="fas fa-shopping-cart"></i>
+                    </div>
+                    <div class="stat-card">
+                        <div class="stat-info">
+                            <h3>Total Revenue</h3>
+                            <p class="stat-value">₹2,45,000</p>
+                        </div>
+                        <i class="fas fa-wallet"></i>
+                    </div>
+                    <div class="stat-card">
+                        <div class="stat-info">
+                            <h3>Check-ins Today</h3>
+                            <p class="stat-value">8</p>
+                        </div>
+                        <i class="fas fa-user-check"></i>
+                    </div>
+                    <div class="stat-card">
+                        <div class="stat-info">
+                            <h3>Pending Enquiries</h3>
+                            <p class="stat-value">15</p>
+                        </div>
+                        <i class="fas fa-clock"></i>
+                    </div>
+                </div>
+
+                <!-- Recent Bookings Table -->
+                <div class="table-container">
+                    <div class="table-header">
+                        <h3>Recent Bookings</h3>
+                        <button class="btn btn-gold">View All</button>
+                    </div>
+                    <table class="admin-table">
+                        <thead>
+                            <tr>
+                                <th>Booking ID</th>
+                                <th>Guest Name</th>
+                                <th>Room Type</th>
+                                <th>Check-in</th>
+                                <th>Status</th>
+                                <th>Action</th>
+                            </tr>
+                        </thead>
+                        <tbody id="bookings-tbody">
+                            <tr>
+                                <td>#BK1024</td>
+                                <td>Rahul Sharma</td>
+                                <td>Deluxe Room</td>
+                                <td>2024-05-10</td>
+                                <td><span class="status confirmed">Confirmed</span></td>
+                                <td><button class="action-btn"><i class="fas fa-ellipsis-v"></i></button></td>
+                            </tr>
+                            <tr>
+                                <td>#BK1025</td>
+                                <td>Priya Patel</td>
+                                <td>Suite Room</td>
+                                <td>2024-05-12</td>
+                                <td><span class="status pending">Pending</span></td>
+                                <td><button class="action-btn"><i class="fas fa-ellipsis-v"></i></button></td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </main>
+    </div>
+
+    <script src="admin.js"></script>
+</body>
+</html>
