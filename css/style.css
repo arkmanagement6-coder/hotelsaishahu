@@ -74,6 +74,8 @@ img {
     display: grid;
     grid-template-columns: 1fr 1fr;
     gap: 30px;
+}
+
 /* Buttons */
 .btn {
     display: inline-block;
@@ -89,23 +91,6 @@ img {
 }
 
 .btn-gold {
-    background: var(--gold);
-    color: var(--white);
-}
-
-.btn-gold:hover {
-    background: var(--primary-blue);
-    transform: translateY(-3px);
-    box-shadow: 0 5px 15px rgba(0, 35, 102, 0.3);
-}
-
-.btn-outline {
-    background: transparent;
-    border: 2px solid var(--gold);
-    color: var(--gold);
-}
-
-.btn-outline:hover {
     background: var(--gold);
     color: var(--white);
 }
@@ -194,7 +179,7 @@ header.scrolled .nav-links a, header.inner-header .nav-links a {
 /* Hero Section */
 .hero {
     height: 100vh;
-    background: linear-gradient(rgba(0, 35, 102, 0.5), rgba(0, 35, 102, 0.5)), url('../assets/hero.jpg') center/cover no-repeat;
+    background: linear-gradient(rgba(0, 35, 102, 0.5), rgba(0, 35, 102, 0.5)), url('../assets/hero.png') center/cover no-repeat;
     display: flex;
     align-items: center;
     justify-content: center;
