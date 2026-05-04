@@ -36,3 +36,22 @@ document.addEventListener('DOMContentLoaded', () => {
         checkoutInput.valueAsDate = tomorrow;
     }
 });
+
+// Menu Category Switcher
+function showCategory(categoryId) {
+    // Hide all categories
+    document.querySelectorAll('.menu-category').forEach(cat => {
+        cat.classList.remove('active');
+    });
+    
+    // Deactivate all tabs
+    document.querySelectorAll('.menu-tab').forEach(tab => {
+        tab.classList.remove('active');
+    });
+    
+    // Show selected category
+    document.getElementById(categoryId).classList.add('active');
+    
+    // Activate clicked tab
+    event.currentTarget.classList.add('active');
+}

@@ -9,6 +9,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Montserrat:wght@300;400;500;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/menu.css">
 </head>
 <body>
 
@@ -66,39 +67,130 @@
     <section class="menu-section section-padding gray-bg">
         <div class="container">
             <div class="section-header text-center">
-                <span class="sub-title">Our Menu</span>
-                <h2>Chef's Special Selection</h2>
+                <span class="sub-title">Our Culinary Delight</span>
+                <h2>Chef's Special Menu</h2>
             </div>
-            <div class="menu-grid">
-                <div class="menu-item">
-                    <div class="menu-info">
-                        <h4>Special Thali</h4>
-                        <p>A complete meal with variety of dishes.</p>
+
+            <!-- Menu Tabs -->
+            <div class="menu-tabs">
+                <div class="menu-tab active" onclick="showCategory('punjabi')">Punjabi Sabji</div>
+                <div class="menu-tab" onclick="showCategory('chinese')">Chinese</div>
+                <div class="menu-tab" onclick="showCategory('seafood')">Sea Food</div>
+                <div class="menu-tab" onclick="showCategory('dessert')">Dessert</div>
+            </div>
+
+            <!-- Punjabi Category -->
+            <div id="punjabi" class="menu-category active">
+                <div class="menu-items-grid">
+                    <div class="menu-col">
+                        <div class="menu-item-row">
+                            <span class="menu-item-name">Aaloo Jeera</span>
+                            <span class="menu-item-price">₹155</span>
+                        </div>
+                        <div class="menu-item-row">
+                            <span class="menu-item-name">Veg Makhanwala</span>
+                            <span class="menu-item-price">₹190</span>
+                        </div>
+                        <div class="menu-item-row">
+                            <span class="menu-item-name">Kaju Masala</span>
+                            <span class="menu-item-price">₹230</span>
+                        </div>
+                        <div class="menu-item-row">
+                            <span class="menu-item-name">Veg Kolhapuri</span>
+                            <span class="menu-item-price">₹170</span>
+                        </div>
                     </div>
-                    <div class="menu-price">₹350</div>
-                </div>
-                <div class="menu-item">
-                    <div class="menu-info">
-                        <h4>Paneer Tikka</h4>
-                        <p>Marinated paneer cubes grilled to perfection.</p>
+                    <div class="menu-col">
+                        <div class="menu-item-row">
+                            <span class="menu-item-name">Paneer Tikka Masala</span>
+                            <span class="menu-item-price">₹260</span>
+                        </div>
+                        <div class="menu-item-row">
+                            <span class="menu-item-name">Shahi Paneer</span>
+                            <span class="menu-item-price">₹230</span>
+                        </div>
+                        <div class="menu-item-row">
+                            <span class="menu-item-name">Paneer Butter Masala</span>
+                            <span class="menu-item-price">₹230</span>
+                        </div>
+                        <div class="menu-item-row">
+                            <span class="menu-item-name">Sai Shahu Special</span>
+                            <span class="menu-item-price">₹330</span>
+                        </div>
                     </div>
-                    <div class="menu-price">₹280</div>
-                </div>
-                <div class="menu-item">
-                    <div class="menu-info">
-                        <h4>Chicken Biryani</h4>
-                        <p>Aromatic rice with tender chicken pieces.</p>
-                    </div>
-                    <div class="menu-price">₹320</div>
-                </div>
-                <div class="menu-item">
-                    <div class="menu-info">
-                        <h4>Dal Tadka</h4>
-                        <p>Yellow lentils tempered with aromatic spices.</p>
-                    </div>
-                    <div class="menu-price">₹180</div>
                 </div>
             </div>
+
+            <!-- Chinese Category -->
+            <div id="chinese" class="menu-category">
+                <div class="menu-items-grid">
+                    <div class="menu-col">
+                        <div class="menu-item-row">
+                            <span class="menu-item-name">Chicken Fried Rice</span>
+                            <span class="menu-item-price">₹240</span>
+                        </div>
+                        <div class="menu-item-row">
+                            <span class="menu-item-name">Chicken Shezwan Rice</span>
+                            <span class="menu-item-price">₹250</span>
+                        </div>
+                        <div class="menu-item-row">
+                            <span class="menu-item-name">Egg Fried Rice</span>
+                            <span class="menu-item-price">₹220</span>
+                        </div>
+                    </div>
+                    <div class="menu-col">
+                        <div class="menu-item-row">
+                            <span class="menu-item-name">Chicken Hakka Noodles</span>
+                            <span class="menu-item-price">₹230</span>
+                        </div>
+                        <div class="menu-item-row">
+                            <span class="menu-item-name">Chicken Crispy</span>
+                            <span class="menu-item-price">₹260</span>
+                        </div>
+                        <div class="menu-item-row">
+                            <span class="menu-item-name">Chicken Lollypop</span>
+                            <span class="menu-item-price">₹280</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Sea Food -->
+            <div id="seafood" class="menu-category">
+                <div class="menu-items-grid">
+                    <div class="menu-item-row">
+                        <span class="menu-item-name">Tandoori Pompret</span>
+                        <span class="menu-item-price">₹500</span>
+                    </div>
+                    <div class="menu-item-row">
+                        <span class="menu-item-name">Fish Tikka</span>
+                        <span class="menu-item-price">₹400</span>
+                    </div>
+                    <div class="menu-item-row">
+                        <span class="menu-item-name">Pompret Curry</span>
+                        <span class="menu-item-price">₹500</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Dessert -->
+            <div id="dessert" class="menu-category">
+                <div class="menu-items-grid">
+                    <div class="menu-item-row">
+                        <span class="menu-item-name">Ice Cream</span>
+                        <span class="menu-item-price">₹50</span>
+                    </div>
+                    <div class="menu-item-row">
+                        <span class="menu-item-name">Milkshake</span>
+                        <span class="menu-item-price">₹80</span>
+                    </div>
+                    <div class="menu-item-row">
+                        <span class="menu-item-name">Milkshake with Icecream</span>
+                        <span class="menu-item-price">₹110</span>
+                    </div>
+                </div>
+            </div>
+            
         </div>
     </section>
 

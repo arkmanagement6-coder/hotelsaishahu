@@ -9,6 +9,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Montserrat:wght@300;400;500;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/menu.css">
 </head>
 <body>
 
@@ -59,9 +60,123 @@
                     <div class="age-disclaimer">
                         <p><i class="fas fa-exclamation-triangle"></i> Entry and drinks served only to adults above legal age.</p>
                     </div>
-                    <a href="#reservation" class="btn btn-gold">Reserve Bar Table</a>
                 </div>
             </div>
+        </div>
+    </section>
+
+    <!-- Drinks Menu -->
+    <section class="menu-section section-padding gray-bg">
+        <div class="container">
+            <div class="section-header text-center">
+                <span class="sub-title">Premium Collection</span>
+                <h2>Drinks Menu</h2>
+            </div>
+
+            <!-- Menu Tabs -->
+            <div class="menu-tabs">
+                <div class="menu-tab active" onclick="showCategory('whisky')">Whisky</div>
+                <div class="menu-tab" onclick="showCategory('beer')">Beer</div>
+                <div class="menu-tab" onclick="showCategory('wine')">Wine</div>
+                <div class="menu-tab" onclick="showCategory('vodka')">Vodka / Rum</div>
+            </div>
+
+            <!-- Whisky Category -->
+            <div id="whisky" class="menu-category active">
+                <div class="menu-items-grid">
+                    <div class="menu-col">
+                        <div class="menu-item-row">
+                            <span class="menu-item-name">Black Dog Gold</span>
+                            <span class="menu-item-price">₹1210 <small>(180ml)</small></span>
+                        </div>
+                        <div class="menu-item-row">
+                            <span class="menu-item-name">Teacher's</span>
+                            <span class="menu-item-price">₹1020 <small>(180ml)</small></span>
+                        </div>
+                        <div class="menu-item-row">
+                            <span class="menu-item-name">Blender Pride Res</span>
+                            <span class="menu-item-price">₹590 <small>(180ml)</small></span>
+                        </div>
+                    </div>
+                    <div class="menu-col">
+                        <div class="menu-item-row">
+                            <span class="menu-item-name">Signature</span>
+                            <span class="menu-item-price">₹550 <small>(180ml)</small></span>
+                        </div>
+                        <div class="menu-item-row">
+                            <span class="menu-item-name">Royal Stag</span>
+                            <span class="menu-item-price">₹350 <small>(180ml)</small></span>
+                        </div>
+                        <div class="menu-item-row">
+                            <span class="menu-item-name">Imperial Blue</span>
+                            <span class="menu-item-price">₹320 <small>(180ml)</small></span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Beer Category -->
+            <div id="beer" class="menu-category">
+                <div class="menu-items-grid">
+                    <div class="menu-col">
+                        <div class="menu-item-row">
+                            <span class="menu-item-name">Budweiser Strong</span>
+                            <span class="menu-item-price">₹340 <small>(650ml)</small></span>
+                        </div>
+                        <div class="menu-item-row">
+                            <span class="menu-item-name">Carsberg Strong</span>
+                            <span class="menu-item-price">₹340 <small>(650ml)</small></span>
+                        </div>
+                    </div>
+                    <div class="menu-col">
+                        <div class="menu-item-row">
+                            <span class="menu-item-name">Kingfisher Ultra</span>
+                            <span class="menu-item-price">₹310 <small>(650ml)</small></span>
+                        </div>
+                        <div class="menu-item-row">
+                            <span class="menu-item-name">Tuborg Mild</span>
+                            <span class="menu-item-price">₹280 <small>(650ml)</small></span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Wine Category -->
+            <div id="wine" class="menu-category">
+                <div class="menu-items-grid">
+                    <div class="menu-item-row">
+                        <span class="menu-item-name">Sula Red Wine</span>
+                        <span class="menu-item-price">₹750 <small>(375ml)</small></span>
+                    </div>
+                    <div class="menu-item-row">
+                        <span class="menu-item-name">Sula White Wine</span>
+                        <span class="menu-item-price">₹750 <small>(375ml)</small></span>
+                    </div>
+                    <div class="menu-item-row">
+                        <span class="menu-item-name">Dia Red Wine</span>
+                        <span class="menu-item-price">₹230 <small>(230ml)</small></span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Vodka / Rum -->
+            <div id="vodka" class="menu-category">
+                <div class="menu-items-grid">
+                    <div class="menu-item-row">
+                        <span class="menu-item-name">Absolute Vodka Plain</span>
+                        <span class="menu-item-price">₹1020 <small>(180ml)</small></span>
+                    </div>
+                    <div class="menu-item-row">
+                        <span class="menu-item-name">Skay Vodka</span>
+                        <span class="menu-item-price">₹680 <small>(180ml)</small></span>
+                    </div>
+                    <div class="menu-item-row">
+                        <span class="menu-item-name">Bacardi White Rum</span>
+                        <span class="menu-item-price">₹570 <small>(180ml)</small></span>
+                    </div>
+                </div>
+            </div>
+
         </div>
     </section>
 
